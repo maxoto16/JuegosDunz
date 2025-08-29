@@ -3,9 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendita De Dunz</title>
+    <title>JuegosDunz - Tienda VR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #4a5568;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #718096;
+            font-size: 1.2em;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-card h3 {
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 5px 0;
+            color: #718096;
+        }
+        
+        .feature-list li:before {
+            content: "🎮 ";
+            margin-right: 8px;
+        }
+        
+        .database-info {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+        
+        .database-info h2 {
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        
+        .sql-code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        
+        .installation-steps {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .step {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .alert {
+            background: #fed7d7;
+            border: 1px solid #feb2b2;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .success {
+            background: #c6f6d5;
+            border: 1px solid #9ae6b4;
+            color: #2f855a;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
 </head>
 <body>
-    <h1>Es joto</h1>
+    <div class="container">
+        <header>
+            <h1>🥽 JuegosDunz</h1>
+            <p class="subtitle">Base de Datos para Tienda de Videojuegos VR</p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>📊 Estructura Completa</h3>
+                <ul class="feature-list">
+                    <li>8 tablas interconectadas</li>
+                    <li>Gestión de juegos VR</li>
+                    <li>Sistema de reseñas</li>
+                    <li>Control de inventario</li>
+                    <li>Categorías y etiquetas</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎮 Datos de Ejemplo</h3>
+                <ul class="feature-list">
+                    <li>7 juegos populares VR</li>
+                    <li>6 desarrolladores conocidos</li>
+                    <li>8 categorías de juegos</li>
+                    <li>Reseñas de usuarios</li>
+                    <li>Requisitos técnicos VR</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>⚡ Funcionalidades Avanzadas</h3>
+                <ul class="feature-list">
+                    <li>Vistas optimizadas</li>
+                    <li>Procedimientos almacenados</li>
+                    <li>Triggers automáticos</li>
+                    <li>Sistema de descuentos</li>
+                    <li>Calificaciones dinámicas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="database-info">
+            <h2>🗄️ Información de la Base de Datos</h2>
+            <p>La base de datos <strong>tienda_vr_dunz</strong> ha sido diseñada específicamente para gestionar una tienda de videojuegos de realidad virtual. Incluye todas las funcionalidades necesarias para un e-commerce moderno.</p>
+            
+            <div class="sql-code">
+-- Ejemplo de consulta: Obtener juegos más populares
+SELECT titulo, precio, calificacion_promedio, categoria, desarrollador
+FROM vista_juegos_completa 
+ORDER BY calificacion_promedio DESC, total_reseñas DESC
+LIMIT 5;
+            </div>
+        </div>
+
+        <div class="installation-steps">
+            <h2>🚀 Instrucciones de Instalación</h2>
+            
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Acceder a phpMyAdmin:</strong> Abre tu panel de phpMyAdmin en el navegador
+            </div>
+            
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Ir a la pestaña SQL:</strong> Haz clic en la pestaña "SQL" en la parte superior
+            </div>
+            
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Importar el script:</strong> Copia el contenido del archivo <code>database_tienda_vr.sql</code> y pégalo en el área de texto
+            </div>
+            
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Ejecutar:</strong> Haz clic en "Continuar" para ejecutar el script completo
+            </div>
+            
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>Verificar:</strong> Revisa que se hayan creado las 8 tablas con sus datos de ejemplo
+            </div>
+        </div>
+
+        <div class="alert success">
+            <strong>✅ ¡Listo para usar!</strong> Una vez ejecutado el script, tendrás una base de datos completamente funcional con datos de ejemplo para comenzar a desarrollar tu tienda VR.
+        </div>
+
+        <div class="database-info">
+            <h2>📁 Archivos Incluidos</h2>
+            <ul class="feature-list">
+                <li><strong>database_tienda_vr.sql</strong> - Script principal de la base de datos</li>
+                <li><strong>README_DATABASE.md</strong> - Documentación completa</li>
+                <li><strong>config_database.php</strong> - Configuración PHP para conectar</li>
+                <li><strong>demo.html</strong> - Esta página de demostración</li>
+            </ul>
+        </div>
+
+        <div class="alert">
+            <strong>⚠️ Nota importante:</strong> Recuerda ajustar las credenciales de la base de datos en el archivo <code>config_database.php</code> según tu configuración de servidor.
+        </div>
+
+        <div class="footer">
+            <p>Creado para JuegosDunz - Tienda de Videojuegos VR 🎮</p>
+        </div>
+    </div>
 </body>
 </html>
