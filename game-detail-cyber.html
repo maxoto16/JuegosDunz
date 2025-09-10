@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Racing 2077 - JuegosDunz</title>
+    <meta name="description" content="Carreras futuristas en un mundo cyberpunk con vehículos personalizables y circuitos neon.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <style>
+        .game-detail-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&h=600&fit=crop&crop=center');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            color: white;
+            text-align: center;
+        }
+        .game-detail-content { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin: 3rem 0; }
+        .game-sidebar { background: white; padding: 2rem; border-radius: 15px; box-shadow: var(--shadow); height: fit-content; position: sticky; top: 120px; }
+        .game-features { list-style: none; margin: 2rem 0; }
+        .game-features li { padding: 0.5rem 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        .feature-label { font-weight: bold; color: var(--sea-blue); }
+        .back-button { display: inline-flex; align-items: center; gap: 0.5rem; margin: 2rem 0; padding: 0.7rem 1.5rem; background: var(--medium-gray); color: white; text-decoration: none; border-radius: 8px; transition: all 0.3s ease; }
+        .back-button:hover { background: var(--primary-dark); transform: translateY(-2px); }
+        @media (max-width: 768px) { .game-detail-content { grid-template-columns: 1fr; } .game-sidebar { position: static; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">🎮 JuegosDunz</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#productos" class="nav-link">Productos</a></li>
+                <li><a href="index.html#novedades" class="nav-link">Novedades</a></li>
+                <li><a href="index.html#descuentos" class="nav-link">Descuentos</a></li>
+                <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle"><span></span><span></span><span></span></div>
+        </nav>
+    </header>
+
+    <section class="game-detail-hero">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">🏎️ Cyber Racing 2077</h1>
+            <p style="font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                Carreras futuristas en un mundo cyberpunk con vehículos personalizables
+            </p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <a href="index.html" class="back-button">← Regresar a la Tienda</a>
+            
+            <div class="game-detail-content">
+                <div class="game-info-detailed">
+                    <section style="margin-bottom: 3rem;">
+                        <h2 style="color: var(--sea-blue); margin-bottom: 1rem;">🏙️ Historia del Juego</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                            En el año 2077, las carreras callejeras han evolucionado hasta convertirse en el deporte más popular del mundo. 
+                            Como piloto novato en Neo Tokyo, deberás abrirte camino a través de los circuitos más peligrosos de la ciudad.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8;">
+                            Personaliza tu vehículo con tecnología de última generación, compite contra los mejores pilotos del underground 
+                            y conviértete en la leyenda de las calles neon.
+                        </p>
+                    </section>
+
+                    <section style="margin-bottom: 3rem;">
+                        <h2 style="color: var(--sea-blue); margin-bottom: 1rem;">🎮 Características del Juego</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">🚗 12 Vehículos</h4>
+                                <p>Desde motocicletas ágiles hasta tanques blindados futuristas.</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">🛣️ 25 Circuitos</h4>
+                                <p>Carreras en rascacielos, túneles subterráneos y autopistas elevadas.</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">⚙️ Personalización</h4>
+                                <p>Motor, aerodinámica, armas, blindaje y estilo visual.</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">🎵 Synthwave</h4>
+                                <p>Banda sonora electrónica original con más de 30 temas.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="game-sidebar">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=300&h=200&fit=crop&crop=center" 
+                             alt="Cyber Racing 2077" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+                        <div class="game-price" style="font-size: 2rem; margin-bottom: 1rem;">$19.99</div>
+                    </div>
+
+                    <ul class="game-features">
+                        <li><span class="feature-label">Género:</span><span>Carreras/Acción</span></li>
+                        <li><span class="feature-label">Plataforma:</span><span>PC Windows</span></li>
+                        <li><span class="feature-label">Tamaño:</span><span>3.8 GB</span></li>
+                        <li><span class="feature-label">Jugadores:</span><span>1-4 localmente</span></li>
+                        <li><span class="feature-label">Idiomas:</span><span>ES, EN, JP</span></li>
+                        <li><span class="feature-label">Duración:</span><span>8-12 horas</span></li>
+                        <li><span class="feature-label">Calificación:</span><span>⭐⭐⭐⭐☆ (4.5/5)</span></li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--sea-blue);">💻 Requisitos Mínimos</h4>
+                        <ul style="font-size: 0.9rem; color: var(--medium-gray);">
+                            <li>OS: Windows 10 64-bit</li>
+                            <li>CPU: Intel i5-7400 / AMD Ryzen 5</li>
+                            <li>RAM: 8 GB</li>
+                            <li>GPU: GTX 1060 / RX 580</li>
+                            <li>Storage: 4 GB available</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                        <a href="mailto:maxoto82@gmail.com?subject=Pedido: Cyber Racing 2077&body=Hola, me interesa comprar Cyber Racing 2077 por $19.99" 
+                           class="btn btn-primary" style="text-align: center; text-decoration: none;">🛒 Comprar Ahora</a>
+                        <a href="mailto:maxoto82@gmail.com?subject=Agregar a Favoritos: Cyber Racing 2077" 
+                           class="btn btn-secondary" style="text-align: center; text-decoration: none;">❤️ Agregar a Favoritos</a>
+                        <a href="index.html" class="btn" style="background: var(--medium-gray); color: white; text-align: center; text-decoration: none;">← Regresar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuegosDunz</h4>
+                    <p>Desarrollador indie apasionado por crear experiencias de gaming únicas.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <p><a href="index.html#productos">Productos</a></p>
+                    <p><a href="index.html#contacto">Contacto</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JuegosDunz. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

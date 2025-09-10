@@ -3,9 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendita De Dunz</title>
+    <title>JuegosDunz - Tienda de Videojuegos Indie</title>
+    <meta name="description" content="Descubre increíbles videojuegos indie desarrollados por JuegosDunz. Aventuras únicas, mundos fantásticos y experiencias inolvidables.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
 </head>
 <body>
-    <h1>Es joto</h1>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">🎮 JuegosDunz</a>
+            <ul class="nav-menu">
+                <li><a href="#productos" class="nav-link">Productos</a></li>
+                <li><a href="#novedades" class="nav-link">Novedades</a></li>
+                <li><a href="#descuentos" class="nav-link">Descuentos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#proyectos-personalizados" class="nav-link">Proyectos Personalizados</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a JuegosDunz</h1>
+            <p>Desarrollador indie apasionado creando experiencias únicas de gaming. Descubre mis juegos finalizados y vive aventuras extraordinarias.</p>
+            <a href="#productos" class="cta-button">Explorar Juegos</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Products Section -->
+            <section id="productos" class="section">
+                <h2 class="section-title">🎯 Juegos Disponibles</h2>
+                <div class="games-grid">
+                    
+                    <!-- Game 1: Mystic Forest Adventure -->
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=200&fit=crop&crop=center" 
+                             alt="Mystic Forest Adventure" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Mystic Forest Adventure</h3>
+                            <p class="game-description">
+                                Una aventura épica en un bosque mágico lleno de criaturas místicas y secretos antiguos. 
+                                Resuelve puzzles, combate enemigos y descubre la verdad oculta.
+                            </p>
+                            <div class="game-price">$24.99</div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido: Mystic Forest Adventure&body=Hola, me interesa comprar Mystic Forest Adventure por $24.99" class="btn btn-primary">Comprar</a>
+                                <a href="game-detail-mystic.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Game 2: Cyber Racing 2077 -->
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=200&fit=crop&crop=center" 
+                             alt="Cyber Racing 2077" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Cyber Racing 2077</h3>
+                            <p class="game-description">
+                                Carreras futuristas en un mundo cyberpunk. Personaliza tu vehículo, compite en circuitos 
+                                neon y conviértete en el piloto más rápido de la ciudad.
+                            </p>
+                            <div class="game-price">$19.99</div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido: Cyber Racing 2077&body=Hola, me interesa comprar Cyber Racing 2077 por $19.99" class="btn btn-primary">Comprar</a>
+                                <a href="game-detail-cyber.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Game 3: Dungeon Master's Quest -->
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1578662015514-456fc8b54ad4?w=400&h=200&fit=crop&crop=center" 
+                             alt="Dungeon Master's Quest" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Dungeon Master's Quest</h3>
+                            <p class="game-description">
+                                RPG clásico con mazmorras procedurales, sistema de crafting profundo y múltiples 
+                                clases de personajes. Una experiencia roguelike adictiva.
+                            </p>
+                            <div class="game-price">$29.99</div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido: Dungeon Master's Quest&body=Hola, me interesa comprar Dungeon Master's Quest por $29.99" class="btn btn-primary">Comprar</a>
+                                <a href="game-detail-dungeon.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Game 4: Space Explorer -->
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=400&h=200&fit=crop&crop=center" 
+                             alt="Space Explorer" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Space Explorer</h3>
+                            <p class="game-description">
+                                Explora galaxias infinitas, coloniza planetas y construye tu imperio espacial. 
+                                Combina exploración, estrategia y supervivencia en el cosmos.
+                            </p>
+                            <div class="game-price">$34.99</div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido: Space Explorer&body=Hola, me interesa comprar Space Explorer por $34.99" class="btn btn-primary">Comprar</a>
+                                <a href="game-detail-space.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Game 5: Pixel Warrior -->
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=200&fit=crop&crop=center" 
+                             alt="Pixel Warrior" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Pixel Warrior</h3>
+                            <p class="game-description">
+                                Plataformero retro con arte pixel perfecto. Combate fluido, power-ups únicos y 
+                                una banda sonora chiptune que te transportará a los 90s.
+                            </p>
+                            <div class="game-price">$14.99</div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido: Pixel Warrior&body=Hola, me interesa comprar Pixel Warrior por $14.99" class="btn btn-primary">Comprar</a>
+                                <a href="game-detail-pixel.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Game 6: Ocean Depths -->
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop&crop=center" 
+                             alt="Ocean Depths" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Ocean Depths</h3>
+                            <p class="game-description">
+                                Sumérgete en las profundidades del océano en esta aventura submarina. 
+                                Descubre especies marinas, tesoros perdidos y misterios ancestrales.
+                            </p>
+                            <div class="game-price">$22.99</div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido: Ocean Depths&body=Hola, me interesa comprar Ocean Depths por $22.99" class="btn btn-primary">Comprar</a>
+                                <a href="game-detail-ocean.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section id="novedades" class="section">
+                <h2 class="section-title">📰 Últimas Novedades</h2>
+                <div class="featured-section">
+                    <div class="featured-content">
+                        <div class="featured-text">
+                            <h3>¡Nuevo Juego en Desarrollo!</h3>
+                            <p>
+                                Estoy trabajando en "Chronicles of Eternity", un RPG épico con más de 40 horas de contenido. 
+                                Sistema de magia innovador, mundo abierto y decisiones que afectan la historia.
+                            </p>
+                            <a href="#contacto" class="btn btn-primary">Mantenerme Informado</a>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&h=300&fit=crop&crop=center" 
+                             alt="Chronicles of Eternity" class="featured-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Discounts Section -->
+            <section id="descuentos" class="section">
+                <h2 class="section-title">🔥 Ofertas Especiales</h2>
+                <div class="games-grid">
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&h=200&fit=crop&crop=center" 
+                             alt="Pixel Warrior" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Pixel Warrior</h3>
+                            <p class="game-description">¡Oferta limitada! 50% de descuento en este clásico plataformero.</p>
+                            <div class="game-price">
+                                <span style="text-decoration: line-through; color: #999;">$14.99</span>
+                                <span style="color: #e74c3c; font-size: 1.2em;">$7.49</span>
+                            </div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido OFERTA: Pixel Warrior&body=Hola, me interesa comprar Pixel Warrior con descuento por $7.49" class="btn btn-primary">¡Comprar Ahora!</a>
+                                <a href="game-detail-pixel.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=200&fit=crop&crop=center" 
+                             alt="Ocean Depths" class="game-image">
+                        <div class="game-info">
+                            <h3 class="game-title">Ocean Depths</h3>
+                            <p class="game-description">Aventura submarina con 30% de descuento por tiempo limitado.</p>
+                            <div class="game-price">
+                                <span style="text-decoration: line-through; color: #999;">$22.99</span>
+                                <span style="color: #e74c3c; font-size: 1.2em;">$16.09</span>
+                            </div>
+                            <div class="game-buttons">
+                                <a href="mailto:maxoto82@gmail.com?subject=Pedido OFERTA: Ocean Depths&body=Hola, me interesa comprar Ocean Depths con descuento por $16.09" class="btn btn-primary">¡Comprar Ahora!</a>
+                                <a href="game-detail-ocean.html" class="btn btn-secondary">Ver Más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Custom Projects Section -->
+            <section id="proyectos-personalizados" class="section">
+                <div class="contact-section">
+                    <div class="contact-info">
+                        <h3>🛠️ Proyectos Personalizados</h3>
+                        <p>
+                            ¿Tienes una idea única para un videojuego? Como desarrollador indie experimentado, 
+                            puedo crear el juego de tus sueños. Desde conceptos simples hasta proyectos complejos.
+                        </p>
+                        <p>
+                            <strong>Servicios:</strong><br>
+                            • Desarrollo completo de videojuegos<br>
+                            • Prototipado y diseño de mecánicas<br>
+                            • Arte y animaciones 2D/3D<br>
+                            • Programación y optimización<br>
+                            • Testing y pulido final
+                        </p>
+                        <a href="mailto:maxoto82@gmail.com?subject=Consulta: Proyecto Personalizado&body=Hola, me interesa desarrollar un juego personalizado. Mi idea es:" class="contact-email">
+                            Consultar Proyecto
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contacto" class="section">
+                <div class="contact-section">
+                    <div class="contact-info">
+                        <h3>📧 Contacto</h3>
+                        <p>
+                            ¿Preguntas sobre algún juego? ¿Soporte técnico? ¿Ideas para colaborar? 
+                            No dudes en contactarme. Respondo todos los emails personalmente.
+                        </p>
+                        <a href="mailto:maxoto82@gmail.com?subject=Consulta General&body=Hola, me gustaría:" class="contact-email">
+                            maxoto82@gmail.com
+                        </a>
+                        <p style="margin-top: 1rem; color: #666;">
+                            <small>Tiempo de respuesta promedio: 24 horas</small>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuegosDunz</h4>
+                    <p>Desarrollador indie apasionado por crear experiencias de gaming únicas y memorables.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <p><a href="#productos">Productos</a></p>
+                    <p><a href="#novedades">Novedades</a></p>
+                    <p><a href="#descuentos">Descuentos</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <p><a href="#contacto">Contacto</a></p>
+                    <p><a href="mailto:maxoto82@gmail.com">Soporte Técnico</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JuegosDunz. Todos los derechos reservados. Hecho con ❤️ para gamers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

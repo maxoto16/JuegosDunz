@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Forest Adventure - JuegosDunz</title>
+    <meta name="description" content="Detalles completos de Mystic Forest Adventure - Una aventura épica en un bosque mágico lleno de criaturas místicas.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <style>
+        .game-detail-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=600&fit=crop&crop=center');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 100px;
+            color: white;
+            text-align: center;
+        }
+        
+        .game-detail-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .game-screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .screenshot {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot:hover {
+            transform: scale(1.05);
+        }
+        
+        .game-sidebar {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+        
+        .game-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .game-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .feature-label {
+            font-weight: bold;
+            color: var(--sea-blue);
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 2rem 0;
+            padding: 0.7rem 1.5rem;
+            background: var(--medium-gray);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .game-detail-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .game-sidebar {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">🎮 JuegosDunz</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#productos" class="nav-link">Productos</a></li>
+                <li><a href="index.html#novedades" class="nav-link">Novedades</a></li>
+                <li><a href="index.html#descuentos" class="nav-link">Descuentos</a></li>
+                <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="index.html#proyectos-personalizados" class="nav-link">Proyectos Personalizados</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Game Detail Hero -->
+    <section class="game-detail-hero">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">🌲 Mystic Forest Adventure</h1>
+            <p style="font-size: 1.3rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                Una aventura épica en un bosque mágico lleno de criaturas místicas y secretos antiguos
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <a href="index.html" class="back-button">
+                ← Regresar a la Tienda
+            </a>
+            
+            <div class="game-detail-content">
+                <!-- Left Column - Game Information -->
+                <div class="game-info-detailed">
+                    
+                    <section style="margin-bottom: 3rem;">
+                        <h2 style="color: var(--sea-blue); margin-bottom: 1rem;">📖 Historia del Juego</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                            En las profundidades del Bosque Místico, antiguos secretos aguardan a ser descubiertos. 
+                            Como Aiden, un joven explorador con poderes mágicos latentes, deberás adentrarte en este 
+                            mundo encantado para resolver el misterio de la Piedra de Eternidad.
+                        </p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;">
+                            El bosque está habitado por criaturas fantásticas, algunas amigables que te ayudarán en tu 
+                            quest, y otras hostiles que protegen los secretos más profundos. Cada decisión que tomes 
+                            afectará el desarrollo de la historia y el destino de este mundo mágico.
+                        </p>
+                    </section>
+
+                    <section style="margin-bottom: 3rem;">
+                        <h2 style="color: var(--sea-blue); margin-bottom: 1rem;">🎮 Características del Juego</h2>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">🗺️ Mundo Abierto</h4>
+                                <p>Explora más de 15 áreas únicas, cada una con sus propios secretos y desafíos.</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">⚔️ Sistema de Combate</h4>
+                                <p>Combate en tiempo real con más de 20 hechizos y habilidades mágicas.</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">🧩 Puzzles Únicos</h4>
+                                <p>Resuelve más de 50 puzzles ambientales y de lógica para progresar.</p>
+                            </div>
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 10px;">
+                                <h4 style="color: var(--purple); margin-bottom: 0.5rem;">🎵 Banda Sonora</h4>
+                                <p>Música original orquestada que se adapta dinámicamente a tu progreso.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section style="margin-bottom: 3rem;">
+                        <h2 style="color: var(--sea-blue); margin-bottom: 1rem;">📱 Capturas de Pantalla</h2>
+                        <div class="game-screenshots">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop" 
+                                 alt="Screenshot 1" class="screenshot">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop" 
+                                 alt="Screenshot 2" class="screenshot">
+                            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=300&h=200&fit=crop" 
+                                 alt="Screenshot 3" class="screenshot">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop" 
+                                 alt="Screenshot 4" class="screenshot">
+                        </div>
+                    </section>
+
+                    <section style="margin-bottom: 3rem;">
+                        <h2 style="color: var(--sea-blue); margin-bottom: 1rem;">⭐ Reseñas de Jugadores</h2>
+                        <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px;">
+                            <div style="margin-bottom: 2rem;">
+                                <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                    <span style="color: #ffb400; font-size: 1.2rem;">★★★★★</span>
+                                    <strong style="margin-left: 0.5rem;">GamerPro2023</strong>
+                                </div>
+                                <p style="font-style: italic;">"Una obra maestra. La atmósfera del bosque es increíble y los puzzles son desafiantes pero justos. 10/10"</p>
+                            </div>
+                            <div style="margin-bottom: 2rem;">
+                                <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                    <span style="color: #ffb400; font-size: 1.2rem;">★★★★☆</span>
+                                    <strong style="margin-left: 0.5rem;">AdventureSeeker</strong>
+                                </div>
+                                <p style="font-style: italic;">"Me encanta la historia y los gráficos. Algunas partes son un poco difíciles, pero vale la pena."</p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <!-- Right Column - Game Purchase Info -->
+                <div class="game-sidebar">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop&crop=center" 
+                             alt="Mystic Forest Adventure" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+                        <div class="game-price" style="font-size: 2rem; margin-bottom: 1rem;">$24.99</div>
+                    </div>
+
+                    <ul class="game-features">
+                        <li>
+                            <span class="feature-label">Género:</span>
+                            <span>Aventura/RPG</span>
+                        </li>
+                        <li>
+                            <span class="feature-label">Plataforma:</span>
+                            <span>PC Windows</span>
+                        </li>
+                        <li>
+                            <span class="feature-label">Tamaño:</span>
+                            <span>4.2 GB</span>
+                        </li>
+                        <li>
+                            <span class="feature-label">Jugadores:</span>
+                            <span>Un jugador</span>
+                        </li>
+                        <li>
+                            <span class="feature-label">Idiomas:</span>
+                            <span>ES, EN, FR</span>
+                        </li>
+                        <li>
+                            <span class="feature-label">Duración:</span>
+                            <span>15-20 horas</span>
+                        </li>
+                        <li>
+                            <span class="feature-label">Calificación:</span>
+                            <span>⭐⭐⭐⭐⭐ (4.8/5)</span>
+                        </li>
+                    </ul>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--sea-blue);">💻 Requisitos Mínimos</h4>
+                        <ul style="font-size: 0.9rem; color: var(--medium-gray);">
+                            <li>OS: Windows 10 64-bit</li>
+                            <li>CPU: Intel i5-6400 / AMD FX-6300</li>
+                            <li>RAM: 8 GB</li>
+                            <li>GPU: GTX 960 / RX 570</li>
+                            <li>DirectX: Version 11</li>
+                            <li>Storage: 5 GB available</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                        <a href="mailto:maxoto82@gmail.com?subject=Pedido: Mystic Forest Adventure&body=Hola, me interesa comprar Mystic Forest Adventure por $24.99.%0A%0AMi información de contacto:%0ANombre:%0AEmail:%0A%0A¡Gracias!" 
+                           class="btn btn-primary" style="text-align: center; text-decoration: none;">
+                            🛒 Comprar Ahora
+                        </a>
+                        
+                        <a href="mailto:maxoto82@gmail.com?subject=Agregar a Favoritos: Mystic Forest Adventure&body=Hola, me gustaría agregar Mystic Forest Adventure a mi lista de favoritos para comprarlo más tarde." 
+                           class="btn btn-secondary" style="text-align: center; text-decoration: none;">
+                            ❤️ Agregar a Favoritos
+                        </a>
+                        
+                        <a href="index.html" class="btn" style="background: var(--medium-gray); color: white; text-align: center; text-decoration: none;">
+                            ← Regresar
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding: 1rem; background: #e8f4fd; border-radius: 10px; text-align: center;">
+                        <p style="font-size: 0.9rem; color: var(--sea-blue); margin-bottom: 0.5rem;">
+                            <strong>🔒 Compra Segura</strong>
+                        </p>
+                        <p style="font-size: 0.8rem; color: var(--medium-gray);">
+                            Recibirás el enlace de descarga por email después de confirmar tu compra.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JuegosDunz</h4>
+                    <p>Desarrollador indie apasionado por crear experiencias de gaming únicas y memorables.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <p><a href="index.html#productos">Productos</a></p>
+                    <p><a href="index.html#novedades">Novedades</a></p>
+                    <p><a href="index.html#descuentos">Descuentos</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <p><a href="index.html#contacto">Contacto</a></p>
+                    <p><a href="mailto:maxoto82@gmail.com">Soporte Técnico</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JuegosDunz. Todos los derechos reservados. Hecho con ❤️ para gamers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
